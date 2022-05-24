@@ -61,9 +61,9 @@ module Fourier
           end
 
           def load_lockfile(path)
-            content = JSON.parse(File.read(path))["pins"]
+            content = JSON.parse(File.read(path))["object"]["pins"]
             content.inject({}) do |acc, package|
-              acc[package["identity"]] = package
+              acc[package["package"]] = package
               acc
             end
           end
