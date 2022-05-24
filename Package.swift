@@ -6,7 +6,7 @@ let swiftToolsSupportDependency: Target.Dependency = .product(name: "SwiftToolsS
 let loggingDependency: Target.Dependency = .product(name: "Logging", package: "swift-log")
 let argumentParserDependency: Target.Dependency = .product(name: "ArgumentParser", package: "swift-argument-parser")
 let swiftGenKitDependency: Target.Dependency = .product(name: "SwiftGenKit", package: "SwiftGen")
-let swifterDependency: Target.Dependency = .byName(name: "Swifter")
+let swifterDependency: Target.Dependency = .product(name: "Swifter", package: "swifter")
 let combineExtDependency: Target.Dependency = .byName(name: "CombineExt")
 
 let package = Package(
